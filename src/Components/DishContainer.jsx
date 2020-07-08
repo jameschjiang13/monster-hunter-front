@@ -16,3 +16,27 @@ export default function DishContainer(props) {
         </div>
     )
 }
+
+// [{
+//     id: 1,
+//     name: "Meow",
+//     location: "xxx",
+//     Meals: [{
+//         id: 1,
+//         name: "Meaty",
+//         Image: "sssss.jpg",
+//         Dish: [{
+//             id: 1,
+//             name: "chicken",
+//             image: "swwww.jpg",
+//             recipes: [{
+//                 id: 1,
+//                 ingredients: "apple:10g, banana: 49g",
+//                 instructions: "Mix everything!!"
+//             }, {}]
+//         }, {}, {}, {}, {}]
+
+//     }, {}, {}]
+// },{
+
+// }]
