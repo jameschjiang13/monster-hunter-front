@@ -10,7 +10,7 @@ export default class MealCard extends Component {
             <div>
                 <h2>{this.props.name}</h2>
                 <img src={this.props.image} alt={this.props.image} width="200" height="200"/>
-                <RecipeForm/>
+                <RecipeForm mealName = {this.props.name} foodArr = {this.props.dishes} />
                 <ResponsivePlayer/>
                 <br/>
                 <ul>
