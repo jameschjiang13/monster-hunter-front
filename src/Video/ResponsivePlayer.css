@@ -1,4 +1,6 @@
 .player-wrapper {
+  margin-top: 20%;
+  margin-left: 22%;
   position: relative;
   padding-top: 75.25%;
   /* Player ratio: 100 / (1280 / 720) */
@@ -11,7 +13,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  margin: 50px 50px 50px 70px;
+  margin: 5px;
   width: 250px;
   max-width: 85%;
 }
