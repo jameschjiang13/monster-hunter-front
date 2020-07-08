@@ -4,7 +4,7 @@ import { NavLink, Link } from "react-router-dom";
 const Header = () => (
   <div>
     <header className="MH-Header">
-      <h1>Welcome to Monster Hunter Chef</h1>
+      {/* <h1>Welcome to Monster Hunter Chef</h1> */}
       <img
         src={
           "https://hardcore-gamer.s3.amazonaws.com/uploads/2019/09/IceborneSelianaHeader.jpeg"
@@ -32,10 +32,3 @@ const Header = () => (
 
 export default Header;
 
-fetch("http://localhost:4000/cities")
-  .then((r) => r.json())
-  .then((cityArray) => {
-    this.setState({
-      city: cityArray,
-    });
-  });
