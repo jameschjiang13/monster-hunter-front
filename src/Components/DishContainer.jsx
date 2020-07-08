@@ -2,17 +2,18 @@ import React from 'react'
 import DishCard from './DishCard'
 
 export default function DishContainer(props) {
-    let componentArr = props.foodArr.map((food) => {
+    let componentArr = props.foodArr.map((dish) => {
         return <DishCard
-        name={food.name}
-        image={food.image}
-        key={food.id}
+        name={dish.name}
+        image={dish.image_url}
+        recipe={dish.recipes}
+        key={dish.id}
         />
     }
     )
     return (
         <div>
-           {componentArr} 
+            {componentArr}
         </div>
     )
 }

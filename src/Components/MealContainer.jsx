@@ -1,45 +1,18 @@
-import React, { Component } from 'react'
 import {Route, Switch, Link, NavLink} from 'react-router-dom'
+import React from 'react'
 
-class MealContainer extends Component {
-    render() {
-        return (
-            <div>
-                <li>
-                    <NavLink to="/meatfest">
-                        Meat Fest
-                    </NavLink>
-                </li>
-                
-                <li>
-                    <NavLink to="/vegan">
-                        Vegan
-                    </NavLink>
-                </li>
-                
-                <li>
-                    <NavLink to="/fastfood">
-                        Fast Food
-                    </NavLink>
-                </li>
-
-                <li>
-                    <NavLink to="/diet">
-                        Diet
-                    </NavLink>
-                </li>
-
-                <li>
-                    <NavLink to="/">
-                        Back
-                    </NavLink>
-                </li>
-                
-                
-            </div>
-        )
+export default function MealContainer(props) {
+    let NavArr = props.chef.meals.map((meal) => {
+        return <li>
+        <NavLink to={`/${meal.name.toLowerCase().split(" ").join("")}`}>
+            {meal.name}
+        </NavLink>
+    </li>
     }
+    )
+    return (
+        <div>
+          {NavArr}  
+        </div>
+    )
 }
-
-
-export default MealContainer;

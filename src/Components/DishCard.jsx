@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import Recipe from './Recipe.jsx'
+import RecipeContainer from './RecipeContainer.jsx'
 
 export default class DishCard extends Component {
     render() {
         return (
             <div>
                 <ul>Food Name: {this.props.name}</ul>
-                <ul>Image: {this.props.image}</ul>
-                <Recipe/>
+                <img src={this.props.image} alt={this.props.image} width="50" height="50"/>
+                <RecipeContainer recipes={this.props.recipe}/>
             </div>
         )
     }

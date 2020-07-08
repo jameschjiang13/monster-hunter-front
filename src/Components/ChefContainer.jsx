@@ -1,27 +1,23 @@
-import React, { Component } from 'react'
 import ChefCard from './ChefCard.jsx'
 
-class ChefContainer extends Component {
+import React from 'react'
 
-    componentsArr = this.props.chefList.map((chefObj) => {
-        return <ChefCard 
+export default function ChefContainer(props) {
+    let componentsArr = props.chefList.map((chefObj) => {      
+        return <ChefCard
+            chef = {chefObj} 
             chefName = {chefObj.name}
-            chefImage = {chefObj.image}
+            chefImage = {chefObj.image_url}
             key = {chefObj.id}
         />
-    }
-    )
+    })
 
-    render() {
-        return (
+    return (
+        <div>
             <div>
                 These are your chefs
-                {this.componentsArr}
+                {componentsArr}
             </div>
-        )
-    }
+        </div>
+    )
 }
-
-
-
-export default ChefContainer

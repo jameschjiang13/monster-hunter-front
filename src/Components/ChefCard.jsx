@@ -13,7 +13,6 @@ export default class ChefCard extends Component {
             }
         }
         )
-        console.log(this.state)
 }
 
     
@@ -27,7 +26,7 @@ export default class ChefCard extends Component {
                 <div>
                     {this.state.fliped
                         ? 
-                        <div onClick={this.handleClick}><MealContainer/></div>
+                        <div onClick={this.handleClick}><MealContainer chef={this.props.chef}/></div>
                         : 
                         <img onClick={this.handleClick} src={this.props.chefImage} alt={this.props.chefImage} width="200" height="200"/>}             
                 </div>
