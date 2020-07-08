@@ -6,38 +6,9 @@ import React, { Component } from "react";
 import { Route, Switch, Link } from "react-router-dom";
 import MealCard from "./Components/MealCard.jsx";
 import NotFound from "./Components/NotFound";
+import Header from './Components/Header'
 
 export default class App extends Component {
-  // state = {
-  //   chefList: [{
-  //     id: 1,
-  //     name: "Meow3",
-  //     image: "https://i.pinimg.com/236x/eb/41/ee/eb41ee851405a0c0a20128169d08889f--monster-hunter-character-art.jpg"
-  //   }, {
-  //     id:2,
-  //     name: "Gram",
-  //     image: "https://vignette.wikia.nocookie.net/monsterhunter/images/8/83/MHWI-Seliana_Screenshot_001.jpg/revision/latest?cb=20190604171445"
-  //   }],
-
-  // MealList : [{
-  //   id: 1,
-  //   name: "Meat Fest",
-  //   chefId: 1
-  // }, {
-  //   id: 2,
-  //   name: "Vegan",
-  //   chefId: 1
-  // }, {
-  //   id: 3,
-  //   name: "Fast Food",
-  //   chefId: 2
-  // }, {
-  //   id: 4,
-  //   name: "Diet",
-  //   chefId: 2
-  // }]
-  // }
-
   state = {
     chefList: [],
   };
@@ -78,6 +49,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
+        <Header/>
         <Switch>
           <Route path="/:meal" render={this.decideWhichCharactersToRender} />
           <Route path="/" exact>
