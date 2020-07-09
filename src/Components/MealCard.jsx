@@ -18,10 +18,10 @@ export default class MealCard extends Component {
     render() {
         return (
             <div>
+                <ResponsivePlayer video = {this.props.video}/>
                 <h2>{this.props.name}</h2>
                 <img src={this.props.image} alt={this.props.image} width="200" height="200"/>
                 <RecipeForm mealName = {this.props.name} foodArr = {this.props.dishes} getFunction = {this.getNewRecipeFromForm} />
-                <ResponsivePlayer video = {this.props.video}/>
                 <br/>
                 <ul>
                     <DishContainer foodArr = {this.props.dishes} extraRecipe = {this.state.newRecipeObj}/>

@@ -9,8 +9,8 @@ const ResponsivePlayer = (props) => {
       <ReactPlayer
         className="react-player"
         url={props.video}
-        width="100%"
-        height="75%"
+        width="75%"
+        height="50%"
         controls={true}
       />
     </div>
