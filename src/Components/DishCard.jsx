@@ -4,7 +4,7 @@ import RecipeContainer from "./RecipeContainer.jsx";
 export default class DishCard extends Component {
   render() {
     return (
-      <div>
+      <div className="dishes">
         <ul>Food Name {this.props.name}</ul>
         <img
           src={this.props.image}
