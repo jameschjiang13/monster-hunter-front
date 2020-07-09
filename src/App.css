@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+.dishes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  justify-content: center;
+}
+
+.recipecard {
+  background: linear-gradient(
+    to bottom right,
+    #330066,
+    #5c00e6,
+    #0000cc,
+    #330066
+  );
+  box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.36);
+  border: solid black 1px;
+  padding: 5px;
+  width: 25%;
+  margin: 2rem;
+  border-radius: 5%;
+}

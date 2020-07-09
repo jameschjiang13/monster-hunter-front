@@ -1,14 +1,14 @@
-import React from 'react'
-import RecipeCard from './RecipeCard'
+import React from "react";
+import RecipeCard from "./RecipeCard";
 
 export default function RecipeContainer(props) {
-    let componentArr = props.recipes.map((recipe) => {
-        return <RecipeCard ingredients={recipe.ingredients} instructions={recipe.instructions}/>
-    }
-    )
+  let componentArr = props.recipes.map((recipe) => {
     return (
-        <div>
-           {componentArr}
-        </div>
-    )
+      <RecipeCard
+        ingredients={recipe.ingredients}
+        instructions={recipe.instructions}
+      />
+    );
+  });
+  return <div className="dishes">{componentArr}</div>;
 }
