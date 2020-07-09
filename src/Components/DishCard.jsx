@@ -7,7 +7,7 @@ export default class DishCard extends Component {
             <div>
                 <ul>Food Name: {this.props.name}</ul>
                 <img src={this.props.image} alt={this.props.image} width="50" height="50"/>
-                <RecipeContainer recipes={this.props.recipe}/>
+                <RecipeContainer recipes={this.props.recipe} extraRecipe = {this.props.extraRecipe}/>
             </div>
         )
     }

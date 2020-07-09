@@ -4,7 +4,6 @@ import { NavLink, Link } from "react-router-dom";
 const Header = () => (
   <div>
     <header className="MH-Header">
-      {/* <h1>Welcome to Monster Hunter Chef</h1> */}
       <img
         src={
           "https://hardcore-gamer.s3.amazonaws.com/uploads/2019/09/IceborneSelianaHeader.jpeg"
@@ -17,13 +16,19 @@ const Header = () => (
           <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          <NavLink to="/">Meowscular Chef</NavLink>
+          <NavLink to="/fatcat">Fat Cat</NavLink>
         </li>
         <li>
-          <NavLink to="/">Grammeowster Chef</NavLink>
+          <NavLink to="/coolcat">Cool Cat</NavLink>
         </li>
         <li>
-          <NavLink to="/">About</NavLink>
+          <NavLink to="/felynefisher">Felyne Fisher</NavLink>
+        </li>
+        <li>
+          <NavLink to="/luckycat">Luck Cat</NavLink>
+        </li>
+        <li>
+          <NavLink to="/about">About</NavLink>
         </li>
       </ul>
     </header>

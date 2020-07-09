@@ -8,6 +8,7 @@ export default function DishContainer(props) {
         image={dish.image_url}
         recipe={dish.recipes}
         key={dish.id}
+        extraRecipe = {props.extraRecipe}
         />
     }
     )

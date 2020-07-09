@@ -17,7 +17,6 @@ export default function RecipeForm(props) {
       ingredients: e.target.ingredients.value,
       instructions: e.target.instructions.value
     } 
-    console.log(recipeObj)
     fetch("http://localhost:4000/recipes", {
       method: "POST",
       headers: {
@@ -26,7 +25,7 @@ export default function RecipeForm(props) {
           body: JSON.stringify(recipeObj)
         })
         .then(resp => resp.json())
-        .then(console.log)
+        .then(recipeObj => {props.getFunction(recipeObj)})
     }
   
   return (
@@ -34,9 +33,7 @@ export default function RecipeForm(props) {
       <div>
         <form onSubmit={handleSubmit}>
           <h3>Add A Recipe To This Dish:</h3>
-          <label>Meal</label> <br />
-          <textarea name="meal" type="text" value = {props.mealName} />
-          <br/>
+          
           <label>Dish</label> <br />
           <select name="dish">
             {dropDownOptions}

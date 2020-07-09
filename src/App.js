@@ -7,6 +7,7 @@ import { Route, Switch, Link } from "react-router-dom";
 import MealCard from "./Components/MealCard.jsx";
 import NotFound from "./Components/NotFound";
 import Header from './Components/Header'
+import About from './Components/About'
 
 export default class App extends Component {
   state = {
@@ -20,7 +21,8 @@ export default class App extends Component {
         this.setState({
           chefList: chefObjs,
         });
-      });
+      }
+      );
   }
 
   decideWhichCharactersToRender = (routerProps) => {
@@ -39,6 +41,7 @@ export default class App extends Component {
           name={foundMeal.name}
           image={foundMeal.image_url}
           dishes={foundMeal.dishes}
+          video={foundMeal.video_url}
         />
       );
     } else {
@@ -46,16 +49,18 @@ export default class App extends Component {
     }
   };
 
+  
+
   render() {
     return (
       <div className="App">
         <Header/>
         <Switch>
+          <Route path="/about" exact component={About} />
           <Route path="/:meal" render={this.decideWhichCharactersToRender} />
           <Route path="/" exact>
             <ChefContainer chefList={this.state.chefList} />
           </Route>
-          <Route path="/" component={NotFound} />
         </Switch>
       </div>
     );
