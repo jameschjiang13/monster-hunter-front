@@ -1,21 +1,19 @@
-import React from 'react'
-import DishCard from './DishCard'
+import React from "react";
+import DishCard from "./DishCard";
 
 export default function DishContainer(props) {
-    let componentArr = props.foodArr.map((dish) => {
-        return <DishCard
+  let componentArr = props.foodArr.map((dish) => {
+    return (
+      <DishCard
         name={dish.name}
         image={dish.image_url}
         recipe={dish.recipes}
         key={dish.id}
-        />
-    }
-    )
-    return (
-        <div>
-            {componentArr}
-        </div>
-    )
+        extraRecipe={props.extraRecipe}
+      />
+    );
+  });
+  return <div className="dishes">{componentArr}</div>;
 }
 
 // [{

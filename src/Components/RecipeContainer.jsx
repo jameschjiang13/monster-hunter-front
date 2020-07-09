@@ -10,5 +10,5 @@ export default function RecipeContainer(props) {
       />
     );
   });
-  return <div className="dishes">{componentArr}</div>;
+  return <div>{componentArr}</div>;
 }
