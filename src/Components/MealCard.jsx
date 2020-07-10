@@ -21,7 +21,7 @@ export default class MealCard extends Component {
           <ResponsivePlayer video={this.props.video} />
         </div>
         <div className="topdiv">
-          <h2 className="luckycat">{this.props.name}</h2>
+          {/* <h2 className="luckycat">{this.props.name}</h2> */}
           <img
             className="luckypicture"
             src={this.props.image}

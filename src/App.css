@@ -31,22 +31,6 @@
   /* color: white; */
 }
 
-/* .recipecard {
-  display: flex;
-  background-color: rgb(101, 101, 147);
-  box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.36);
-  border: solid black 1px;
-  padding: 5px;
-  width: 50%;
-  margin: 2rem;
-  border-radius: 5px;
-  position: relative;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-} */
-
 .topdiv {
   width: 90%;
   height: 90%;
