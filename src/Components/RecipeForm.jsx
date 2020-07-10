@@ -30,22 +30,25 @@ export default function RecipeForm(props) {
   
   return (
     <div>
-      <div>
+      <div class="form">
         <form onSubmit={handleSubmit}>
-          <h3>Add A Recipe To This Dish:</h3>
+          <h3>Add A Recipe To This Meal:</h3>
           
           <label>Dish</label> <br />
           <select name="dish">
             {dropDownOptions}
           </select>
           <br/>
-          <label>Ingredients:</label> <br />
-          <textarea name="ingredients" type="text" value = {ingredients} onChange={(e) => setIngredients(e.target.value)} />
+          <div class="column left">
+            <label>Ingredients:</label> <br />
+            <textarea name="ingredients" type="text" value = {ingredients} onChange={(e) => setIngredients(e.target.value)} style={{width: 400, height: 50}} />
+          </div>
           <br />
+          <div class="column right">
           <label>Instructions:</label>
+          <textarea name="instructions" type="text" value = {instructions} onChange={(e) => setInstructions(e.target.value)} style={{width: 400, height: 50}}/>
           <br />
-          <textarea name="instructions" type="text" value = {instructions} onChange={(e) => setInstructions(e.target.value)}/>
-          <br />
+          </div>
           <button>Submit Recipe</button>
         </form>
       </div>

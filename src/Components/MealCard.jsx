@@ -25,12 +25,12 @@ export default class MealCard extends Component {
       <div>
         <ResponsivePlayer video={this.props.video} />
         <h2>{this.props.name}</h2>
-        <img
+        {/* <img
           src={this.props.image}
           alt={this.props.image}
           width="200"
           height="200"
-        />
+        /> */}
         <RecipeForm
           mealName={this.props.name}
           foodArr={this.props.dishes}
