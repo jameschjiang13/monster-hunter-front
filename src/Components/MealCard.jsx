@@ -14,12 +14,6 @@ export default class MealCard extends Component {
     });
   };
 
-  getNewRecipeFromForm = (recipeObj) => {
-    this.setState({
-      newRecipeObj: recipeObj,
-    });
-  };
-
   render() {
     return (
       <div>
