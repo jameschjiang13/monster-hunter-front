@@ -3,7 +3,6 @@ import ReactPlayer from "react-player";
 import "./ResponsivePlayer.css";
 
 const ResponsivePlayer = (props) => {
-  console.log(props)
   return (
     <div className="player-wrapper">
       <ReactPlayer
