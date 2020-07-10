@@ -1,19 +1,13 @@
 import React, { Component } from "react";
 
 export default class RecipeCard extends Component {
-  state = {
-    removed: {},
-  };
+
   handleClick = (e) => {
     fetch(`http://localhost:4000/recipes/${this.props.id}`, {
       method: "DELETE",
     })
       .then((r) => r.json())
-      .then((removedRecipe) => {
-        this.setState({
-          removed: removedRecipe,
-        });
-      });
+      .then(removedRecipe => {this.props.removeFunction(removedRecipe)})
   };
 
   render() {
