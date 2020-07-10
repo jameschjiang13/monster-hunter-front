@@ -2,10 +2,11 @@ import React from "react";
 
 const About = () => {
   return (
-    <div>
+    <div className="about">
       <h2>About Monster Hunter World</h2>
       <img
         src="https://cdn-ext.fanatical.com/production/product/original/7f6e4bbc-69a4-4910-a424-8b4f14100c12.jpeg?w=1200"
+        height="500px"
         alt="Monster Hunter Poster"
       />
       <p>
@@ -27,6 +28,7 @@ const About = () => {
       <h2>Monster Hunter Cookbook</h2>
       <img
         src="https://s.pacn.ws/1500/wn/monster-hunter-recipes-book-587661.1.jpg?pp9r45"
+        height="500px"
         alt="Monster Hunter Cookbook"
       />
       <p>

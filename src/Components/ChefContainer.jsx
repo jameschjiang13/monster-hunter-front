@@ -1,23 +1,18 @@
-import ChefCard from './ChefCard.jsx'
+import ChefCard from "./ChefCard.jsx";
 
-import React from 'react'
+import React from "react";
 
 export default function ChefContainer(props) {
-    let componentsArr = props.chefList.map((chefObj) => {      
-        return <ChefCard
-            chef = {chefObj} 
-            chefName = {chefObj.name}
-            chefImage = {chefObj.image_url}
-            key = {chefObj.id}
-        />
-    })
-
+  let componentsArr = props.chefList.map((chefObj) => {
     return (
-        <div>
-            <div>
-                These are your chefs
-                {componentsArr}
-            </div>
-        </div>
-    )
+      <ChefCard
+        chef={chefObj}
+        chefName={chefObj.name}
+        chefImage={chefObj.image_url}
+        key={chefObj.id}
+      />
+    );
+  });
+
+  return <div className="container">{componentsArr}</div>;
 }
