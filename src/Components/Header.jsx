@@ -3,13 +3,15 @@ import { NavLink, Link } from "react-router-dom";
 
 const Header = () => (
   <div>
-    <header className="MH-Header">
+    <header>
       <img
+        className="MH-Header"
         src={
           "https://hardcore-gamer.s3.amazonaws.com/uploads/2019/09/IceborneSelianaHeader.jpeg"
         }
         alt="Monster Hunter Header"
         width="100%"
+        height="350px"
       />
       <ul className="nav">
         <li>

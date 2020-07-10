@@ -5,7 +5,7 @@ export default class DishCard extends Component {
   render() {
     return (
       <div className="dishes">
-        <ul>Food Name {this.props.name}</ul>
+        <h4>Food Name {this.props.name}</h4>
         <img
           src={this.props.image}
           alt={this.props.image}

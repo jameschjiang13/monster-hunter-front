@@ -1,13 +1,38 @@
 .dishes {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   flex-basis: 100%;
-  justify-content: center;
+  justify-content: space-evenly;
   border: solid black 1px;
   background-color: rgb(101, 101, 147);
+  margin: 10px;
+  padding: 10px;
+  align-items: center;
 }
 
-.recipecard {
+.container {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.chefcard {
+  min-height: 320px;
+  min-width: 630px;
+  margin: 5px;
+  padding: 15px;
+  background: rgb(101, 101, 147);
+  border-radius: 25px;
+  text-align: center;
+  position: relative;
+  /* color: white; */
+}
+
+/* .recipecard {
+  display: flex;
   background-color: rgb(101, 101, 147);
   box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.36);
   border: solid black 1px;
@@ -15,4 +40,43 @@
   width: 50%;
   margin: 2rem;
   border-radius: 5px;
+  position: relative;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+} */
+
+.topdiv {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  /* background-color: purple; */
+  align-items: center;
+  padding: 20px;
+  padding-left: 30%;
+}
+
+.luckycat {
+  margin: 10px;
+}
+
+.luckypicture {
+  margin: 10px;
+}
+
+.addrecipe {
+  margin: 10px;
+}
+
+.about {
+  height: 90vh;
+  width: 90vh;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 5%;
 }
