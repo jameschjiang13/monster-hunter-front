@@ -4,13 +4,15 @@ import { NavLink, Link } from "react-router-dom";
 const Header = () => (
   <div>
     <header>
-      {/* <img
+      <img
         className="MH-Header"
-        src={"https://www.monsterhunterworld.com/images/share.png"}
+        src={
+          "https://hardcore-gamer.s3.amazonaws.com/uploads/2019/09/IceborneSelianaHeader.jpeg"
+        }
         alt="Monster Hunter Header"
         width="100%"
         height="350px"
-      /> */}
+      />
       <ul className="nav">
         <li>
           <NavLink to="/">Home</NavLink>
@@ -25,7 +27,7 @@ const Header = () => (
           <NavLink to="/felynefisher">Felyne Fisher</NavLink>
         </li>
         <li>
-          <NavLink to="/luckycat">Luck Cat</NavLink>
+          <NavLink to="/luckycat">Lucky Cat</NavLink>
         </li>
         <li>
           <NavLink to="/about">About</NavLink>
